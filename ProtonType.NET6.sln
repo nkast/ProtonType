@@ -1,21 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1433
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3rdPartyLibraries", "3rdPartyLibraries", "{ACA53B8F-8E20-4B08-8A2B-A427A092D37C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProtonType.Framework.NET5", "ProtonType.Framework\ProtonType.Framework.NET5.csproj", "{7ED07123-58DF-440E-BE73-FA37F48AF799}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProtonType.Framework.NET5", "ProtonType.Framework\ProtonType.Framework.NET6.csproj", "{7ED07123-58DF-440E-BE73-FA37F48AF799}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProtonType.FileSystem.NET5", "ProtonType.FileSystem\ProtonType.FileSystem.NET5.csproj", "{98E2187D-2831-419D-A90F-723AC645D9ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProtonType.FileSystem.NET5", "ProtonType.FileSystem\ProtonType.FileSystem.NET6.csproj", "{98E2187D-2831-419D-A90F-723AC645D9ED}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProtonType.Logger.NET5", "ProtonType.Logger\ProtonType.Logger.NET5.csproj", "{C0862807-ACCB-4347-922D-7FF0D8560293}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProtonType.Logger.NET5", "ProtonType.Logger\ProtonType.Logger.NET6.csproj", "{C0862807-ACCB-4347-922D-7FF0D8560293}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvalonDock.NET5", "3rdPartyLibraries\AvalonDock\src\AvalonDock\AvalonDock.NET5.csproj", "{DB81988F-E0F2-45A0-A1FD-8C37F3D35244}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvalonDock.NET5", "3rdPartyLibraries\AvalonDock\src\AvalonDock\AvalonDock.NET6.csproj", "{DB81988F-E0F2-45A0-A1FD-8C37F3D35244}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvalonDock.Themes.MetroDark.NET5", "3rdPartyLibraries\AvalonDock\src\AvalonDock.Themes.MetroDark\AvalonDock.Themes.MetroDark.NET5.csproj", "{7022A42A-7B99-40E4-91F4-E6340334E0F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvalonDock.Themes.MetroDark.NET5", "3rdPartyLibraries\AvalonDock\src\AvalonDock.Themes.MetroDark\AvalonDock.Themes.MetroDark.NET6.csproj", "{7022A42A-7B99-40E4-91F4-E6340334E0F5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProtonType.App.NET5", "ProtonType.App\ProtonType.App.NET5.csproj", "{D163FFB3-33C5-44F1-9C87-81E0A5B6AC0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProtonType.App.NET5", "ProtonType.App\ProtonType.App.NET6.csproj", "{D163FFB3-33C5-44F1-9C87-81E0A5B6AC0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

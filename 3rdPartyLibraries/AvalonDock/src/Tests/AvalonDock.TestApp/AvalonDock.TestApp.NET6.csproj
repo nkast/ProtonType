@@ -2,13 +2,14 @@
 
   <PropertyGroup>
     <EnableDefaultItems>false</EnableDefaultItems>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AvalonDock.MVVMTestApp</RootNamespace>
-    <AssemblyName>AvalonDock.MVVMTestApp</AssemblyName>
+    <RootNamespace>AvalonDock.TestApp</RootNamespace>
+    <AssemblyName>AvalonDock.TestApp</AssemblyName>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -20,6 +21,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -31,42 +34,50 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
-    <Compile Include="ActiveDocumentConverter.cs" />
-    <Compile Include="LayoutInitializer.cs" />
-    <Compile Include="PanesStyleSelector.cs" />
-    <Compile Include="PanesTemplateSelector.cs" />
-    <Compile Include="FileStatsViewModel.cs" />
-    <Compile Include="FileViewModel.cs" />
-    <Compile Include="PaneViewModel.cs" />
-    <Compile Include="RelayCommand.cs" />
-    <Compile Include="ToolViewModel.cs" />
-    <Compile Include="ViewModelBase.cs" />
-    <Compile Include="Workspace.cs" />
+    <Compile Include="TestUserControl.xaml.cs" />
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Compile Include="App.xaml.cs" />
     <Compile Include="MainWindow.xaml.cs" />
+    <Page Include="TestUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\AvalonDock.Themes.VS2010\AvalonDock.Themes.VS2010.NET5.csproj">
-    </ProjectReference>
-    <ProjectReference Include="..\..\AvalonDock\AvalonDock.NET5.csproj">
-    </ProjectReference>
+    <Resource Include="Images\address-book--pencil.png" />
+    <Resource Include="Images\address-book-open.png" />
+    <Resource Include="Images\alarm-clock-blue.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\document.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\property-blue.png" />
+    <ProjectReference Include="..\..\AvalonDock.Themes.MetroDark\AvalonDock.Themes.MetroDark.NET6.csproj">
+    </ProjectReference>
+    <ProjectReference Include="..\..\AvalonDock.Themes.VS2010\AvalonDock.Themes.VS2010.NET6.csproj">
+    </ProjectReference>
+    <ProjectReference Include="..\..\AvalonDock.Themes.Expression\AvalonDock.Themes.Expression.NET6.csproj">
+    </ProjectReference>
+    <ProjectReference Include="..\..\AvalonDock.Themes.Metro\AvalonDock.Themes.Metro.NET6.csproj">
+    </ProjectReference>
+    <ProjectReference Include="..\..\AvalonDock\AvalonDock.NET6.csproj">
+    </ProjectReference>
   </ItemGroup>
 </Project>

@@ -2,14 +2,15 @@
 
   <PropertyGroup>
     <EnableDefaultItems>false</EnableDefaultItems>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
     <OutputType>Library</OutputType>
     <RootNamespace>tainicom.ProtonType.Framework</RootNamespace>
     <AssemblyName>ProtonType.Framework</AssemblyName>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <OutputPath>$(SolutionDir)bin\$(Configuration)\$(Platform)\net5</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>$(SolutionDir)bin\$(Configuration)\$(Platform)\net6</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>

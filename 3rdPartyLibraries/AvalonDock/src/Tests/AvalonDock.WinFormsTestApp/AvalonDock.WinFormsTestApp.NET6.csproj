@@ -2,8 +2,9 @@
 
   <PropertyGroup>
     <EnableDefaultItems>false</EnableDefaultItems>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -58,17 +59,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\AvalonDock.Themes.Aero\AvalonDock.Themes.Aero.NET5.csproj">
+    <ProjectReference Include="..\..\AvalonDock.Themes.Aero\AvalonDock.Themes.Aero.NET6.csproj">
     </ProjectReference>
-    <ProjectReference Include="..\..\AvalonDock.Themes.Expression\AvalonDock.Themes.Expression.NET5.csproj">
+    <ProjectReference Include="..\..\AvalonDock.Themes.Expression\AvalonDock.Themes.Expression.NET6.csproj">
     </ProjectReference>
-    <ProjectReference Include="..\..\AvalonDock.Themes.MetroDark\AvalonDock.Themes.MetroDark.NET5.csproj">
+    <ProjectReference Include="..\..\AvalonDock.Themes.MetroDark\AvalonDock.Themes.MetroDark.NET6.csproj">
     </ProjectReference>
-    <ProjectReference Include="..\..\AvalonDock.Themes.Metro\AvalonDock.Themes.Metro.NET5.csproj">
+    <ProjectReference Include="..\..\AvalonDock.Themes.Metro\AvalonDock.Themes.Metro.NET6.csproj">
     </ProjectReference>
-    <ProjectReference Include="..\..\AvalonDock.Themes.VS2010\AvalonDock.Themes.VS2010.NET5.csproj">
+    <ProjectReference Include="..\..\AvalonDock.Themes.VS2010\AvalonDock.Themes.VS2010.NET6.csproj">
     </ProjectReference>
-    <ProjectReference Include="..\..\AvalonDock\AvalonDock.NET5.csproj">
+    <ProjectReference Include="..\..\AvalonDock\AvalonDock.NET6.csproj">
     </ProjectReference>
   </ItemGroup>
 </Project>

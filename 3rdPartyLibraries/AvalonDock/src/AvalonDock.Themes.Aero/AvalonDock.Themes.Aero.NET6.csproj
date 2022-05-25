@@ -2,13 +2,13 @@
 
   <PropertyGroup>
     <EnableDefaultItems>false</EnableDefaultItems>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
-    <OutputType>Library</OutputType>
+    <OutputType>library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AvalonDock.Themes</RootNamespace>
-    <AssemblyName>AvalonDock.Themes.Expression</AssemblyName>
+    <AssemblyName>AvalonDock.Themes.Aero</AssemblyName>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -18,111 +18,148 @@
     <OutputPath>bin\Release\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xaml" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
     <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AeroColors.cs" />
     <Compile Include="AssemblyVersionInfo.cs" />
     <Compile Include="AssemblyVersionInfoCommon.cs" />
     <Compile Include="Controls\SplineBorder.cs" />
-    <Compile Include="Controls\UserControl1.xaml.cs">
-      <DependentUpon>UserControl1.xaml</DependentUpon>
+    <Compile Include="Properties\AssemblyInfo.cs">
     </Compile>
-    <Compile Include="ExpressionLightTheme.cs" />
-    <Compile Include="ExpressionDarkTheme.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AeroTheme.cs" />
+    <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="Controls\UserControl1.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="LightTheme.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="LightBrushes.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="DarkBrushes.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
+    <ProjectReference Include="..\AvalonDock\AvalonDock.NET6.csproj">
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Brushes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Theme.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="DarkTheme.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
+    <Resource Include="Images\DockAnchorableBottom.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\PinAutoHide.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Images\PinClose_Dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\PinAutoHide_Black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\PinAutoHide_Dark.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Images\PinClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\PinClose_Black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\PinRestore_Dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\PinDocMenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\PinDocMenu_Black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\PinMaximize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\PinMaximize_Black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\PinMaximize_Dark.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\PinMenu.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\PinAutoHide_Light.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\PinClose_Light.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\PinMenu_Light.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\DockAnchorableBottom.png" />
-    <Resource Include="Images\DockAnchorableLeft.png" />
-    <Resource Include="Images\DockAnchorableRight.png" />
-    <Resource Include="Images\DockAnchorableTop.png" />
-    <Resource Include="Images\DockDocumentAsAnchorableBottom.png" />
-    <Resource Include="Images\DockDocumentAsAnchorableLeft.png" />
-    <Resource Include="Images\DockDocumentAsAnchorableRight.png" />
-    <Resource Include="Images\DockDocumentAsAnchorableTop.png" />
-    <Resource Include="Images\DockDocumentBottom.png" />
-    <Resource Include="Images\DockDocumentInside.png" />
-    <Resource Include="Images\DockDocumentLeft.png" />
-    <Resource Include="Images\DockDocumentRight.png" />
-    <Resource Include="Images\DockDocumentTop.png" />
-    <Resource Include="Images\DockPaneEmpty.png" />
-    <Resource Include="Images\DockPaneLargeEmpty.png" />
-    <Resource Include="Images\HTabGroup.png" />
-    <Resource Include="Images\Locked.png" />
-    <Resource Include="Images\PinAutoHide_Black.png" />
-    <Resource Include="Images\PinAutoHide_Dark.png" />
-    <Resource Include="Images\PinClose_Black.png" />
-    <Resource Include="Images\PinClose_Dark.png" />
-    <Resource Include="Images\PinDocMenu_Black.png" />
-    <Resource Include="Images\PinDocMenu_Dark.png" />
-    <Resource Include="Images\PinMaximize_Black.png" />
-    <Resource Include="Images\PinMaximize_Dark.png" />
     <Resource Include="Images\PinMenu_Black.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Images\PinMenu_Dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\PinRestore.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Images\PinRestore_Black.png" />
-    <Resource Include="Images\PinRestore_Dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DockPaneLargeEmpty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DockAnchorableLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DockAnchorableRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DockAnchorableTop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DockDocumentAsAnchorableBottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DockDocumentAsAnchorableLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DockDocumentAsAnchorableRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DockDocumentAsAnchorableTop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DockDocumentBottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DockDocumentInside.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DockDocumentLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DockDocumentRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DockDocumentTop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DockPaneEmpty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\HTabGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Locked.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Images\VTabGroup.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\PinMaximize.png" />
-    <Resource Include="Images\PinMaximize_Light.png" />
-    <Resource Include="Images\PinRestore.png" />
-    <Resource Include="Images\PinRestore_Light.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AvalonDock\AvalonDock.NET5.csproj">
-    </ProjectReference>
+    <Resource Include="Images\PinDocMenu_Dark.png" />
   </ItemGroup>
 </Project>
