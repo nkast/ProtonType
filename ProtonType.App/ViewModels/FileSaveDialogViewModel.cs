@@ -17,6 +17,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Windows;
 using System.Windows.Media.Imaging;
 using tainicom.ProtonType.Framework.Modules;
 using tainicom.ProtonType.Framework.ViewModels;
@@ -67,7 +68,6 @@ namespace tainicom.ProtonType.App.ViewModels
             _mainViewModel = mainViewModel;
 
             IconSource = CreateImageSource(@"/ProtonType.Editor;component/icons/SaveDocument.png");
-            IconSource.Freeze();
 
             // create list of file extensions
             var fileDocumentsMgr = mainViewModel.Model.FileDocumentsMgr;
@@ -85,6 +85,9 @@ namespace tainicom.ProtonType.App.ViewModels
 
         private static BitmapImage CreateImageSource(string resourcePath)
         {
+            System.Diagnostics.Debug.Assert(System.Threading.Thread.CurrentThread == Application.Current.Dispatcher.Thread,
+                "ImageSource must be created in UIThread.");
+
             BitmapImage bmp = new BitmapImage();
             bmp.BeginInit();
             bmp.UriSource = new Uri(resourcePath, UriKind.Relative);

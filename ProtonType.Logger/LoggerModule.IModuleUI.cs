@@ -54,6 +54,9 @@ namespace tainicom.ProtonType.Logger
 
         internal static ImageSource CreateImageSource(string resourcePath)
         {
+            System.Diagnostics.Debug.Assert(System.Threading.Thread.CurrentThread == Application.Current.Dispatcher.Thread,
+                "ImageSource must be created in UIThread.");
+
             var baseUrl = @"/ProtonType.LoggerModule;component/";
             BitmapImage bmp = new BitmapImage();
             bmp.BeginInit();

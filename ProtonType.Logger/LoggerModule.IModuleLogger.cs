@@ -38,8 +38,11 @@ namespace tainicom.ProtonType.Logger
         {
             if (_defaultOutputViewModel == null)
             {
-                var iconSource = LoggerModule.CreateImageSource(@"Icons/Output_16xLG.png");
-                _defaultOutputViewModel = new OutputViewModel(this, iconSource);
+                Application.Current.Dispatcher.Invoke(System.Windows.Threading.DispatcherPriority.Send, new Action(() =>
+                {
+                    var iconSource = LoggerModule.CreateImageSource(@"Icons/Output_16xLG.png");
+                    _defaultOutputViewModel = new OutputViewModel(this, iconSource);
+                }));
             }
             return _defaultOutputViewModel;
         }
@@ -48,8 +51,11 @@ namespace tainicom.ProtonType.Logger
         {
             if (_defaultErrorListViewModel == null)
             {   
-                var iconSource = LoggerModule.CreateImageSource(@"Icons/BuildErrorList_16x.png");
-                _defaultErrorListViewModel = new ErrorListViewModel(this, iconSource);
+                Application.Current.Dispatcher.Invoke(System.Windows.Threading.DispatcherPriority.Send, new Action(() =>
+                {
+                    var iconSource = LoggerModule.CreateImageSource(@"Icons/BuildErrorList_16x.png");
+                    _defaultErrorListViewModel = new ErrorListViewModel(this, iconSource);
+                }));
             }
             return _defaultErrorListViewModel;
         }
