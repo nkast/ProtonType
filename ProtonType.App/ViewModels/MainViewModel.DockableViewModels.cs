@@ -17,19 +17,19 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Windows;
-using tainicom.ProtonType.App.Views;
-using tainicom.ProtonType.Framework.Commands;
-using tainicom.ProtonType.Framework.ViewModels;
+using nkast.ProtonType.App.Views;
+using nkast.ProtonType.Framework.Commands;
+using nkast.ProtonType.Framework.ViewModels;
 
-namespace tainicom.ProtonType.App.ViewModels
+namespace nkast.ProtonType.App.ViewModels
 {
     public partial class MainViewModel : BaseViewModel
     {
-        ObservableCollection<tainicom.ProtonType.Framework.ViewModels.ToolViewModel> _internalPanels = new ObservableCollection<tainicom.ProtonType.Framework.ViewModels.ToolViewModel>();
-        ObservableCollection<tainicom.ProtonType.Framework.ViewModels.DocumentViewModel> _internalDocuments = new ObservableCollection<tainicom.ProtonType.Framework.ViewModels.DocumentViewModel>();
+        ObservableCollection<nkast.ProtonType.Framework.ViewModels.ToolViewModel> _internalPanels = new ObservableCollection<nkast.ProtonType.Framework.ViewModels.ToolViewModel>();
+        ObservableCollection<nkast.ProtonType.Framework.ViewModels.DocumentViewModel> _internalDocuments = new ObservableCollection<nkast.ProtonType.Framework.ViewModels.DocumentViewModel>();
         
-        private ReadOnlyObservableCollection<tainicom.ProtonType.Framework.ViewModels.DocumentViewModel> _readonyDocuments = null;
-        private ReadOnlyObservableCollection<tainicom.ProtonType.Framework.ViewModels.ToolViewModel> _readonyPanels = null;
+        private ReadOnlyObservableCollection<nkast.ProtonType.Framework.ViewModels.DocumentViewModel> _readonyDocuments = null;
+        private ReadOnlyObservableCollection<nkast.ProtonType.Framework.ViewModels.ToolViewModel> _readonyPanels = null;
         
         private void InitializePanels(MainWindow mainWindow)
         {
@@ -42,42 +42,42 @@ namespace tainicom.ProtonType.App.ViewModels
         {
             e.Cancel = true;
             var paneViewModel = (PaneViewModel)e.Document.Content;
-            Controller.EnqueueAndExecute(new tainicom.ProtonType.Framework.Commands.RemovePaneCmd(Site, paneViewModel));
+            Controller.EnqueueAndExecute(new nkast.ProtonType.Framework.Commands.RemovePaneCmd(Site, paneViewModel));
         }
         void dockingManager_AnchorableClosing(object sender, AvalonDock.AnchorableClosingEventArgs e)
         {
             // AnchorableClosing is never called. By default AnchorableItems will get Hidden when the Close button is clicked.
             e.Cancel = true;
             var paneViewModel = (PaneViewModel)e.Anchorable.Content;
-            Controller.EnqueueAndExecute(new tainicom.ProtonType.Framework.Commands.RemovePaneCmd(Site, paneViewModel));
+            Controller.EnqueueAndExecute(new nkast.ProtonType.Framework.Commands.RemovePaneCmd(Site, paneViewModel));
         }        
         void dockingManager_AnchorableHiding(object sender, AvalonDock.AnchorableHidingEventArgs e)
         {
             e.Cancel = true;
             var paneViewModel = (PaneViewModel)e.Anchorable.Content;
             //Controller.EnqueueAndExecute(new HidePaneCmd(Site, e.Anchorable));
-            Controller.EnqueueAndExecute(new tainicom.ProtonType.Framework.Commands.RemovePaneCmd(Site, paneViewModel));
+            Controller.EnqueueAndExecute(new nkast.ProtonType.Framework.Commands.RemovePaneCmd(Site, paneViewModel));
         }
 
-        public IEnumerable<tainicom.ProtonType.Framework.ViewModels.ToolViewModel> Panels
+        public IEnumerable<nkast.ProtonType.Framework.ViewModels.ToolViewModel> Panels
         {
             get
             {
                 if (_readonyPanels == null)
                 {
-                    _readonyPanels = new ReadOnlyObservableCollection<tainicom.ProtonType.Framework.ViewModels.ToolViewModel>(_internalPanels);
+                    _readonyPanels = new ReadOnlyObservableCollection<nkast.ProtonType.Framework.ViewModels.ToolViewModel>(_internalPanels);
                 }
                 return _readonyPanels;
             }
         }
 
-        public IEnumerable<tainicom.ProtonType.Framework.ViewModels.DocumentViewModel> Documents
+        public IEnumerable<nkast.ProtonType.Framework.ViewModels.DocumentViewModel> Documents
         {
             get
             {
                 if (_readonyDocuments == null)
                 {
-                    _readonyDocuments = new ReadOnlyObservableCollection<tainicom.ProtonType.Framework.ViewModels.DocumentViewModel>(_internalDocuments);
+                    _readonyDocuments = new ReadOnlyObservableCollection<nkast.ProtonType.Framework.ViewModels.DocumentViewModel>(_internalDocuments);
                 }
                 return _readonyDocuments;
             }
@@ -92,7 +92,7 @@ namespace tainicom.ProtonType.App.ViewModels
             //set { SetValue(ActiveContentProperty, value); }
         }
         
-        internal void AddPane(tainicom.ProtonType.Framework.ViewModels.ToolViewModel viewModel)
+        internal void AddPane(nkast.ProtonType.Framework.ViewModels.ToolViewModel viewModel)
         {
             Controller.EnqueueAndExecute(new AddPaneCmd(this.Site, viewModel));
         }

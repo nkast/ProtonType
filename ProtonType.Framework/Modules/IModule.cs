@@ -14,7 +14,7 @@
 //   limitations under the License.
 #endregion
 
-namespace tainicom.ProtonType.Framework.Modules
+namespace nkast.ProtonType.Framework.Modules
 {
     public interface IModule
     {

@@ -20,9 +20,9 @@ using System.Linq;
 using System.Text;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using tainicom.ProtonType.Framework.Modules;
+using nkast.ProtonType.Framework.Modules;
 
-namespace tainicom.ProtonType.Logger.ViewModels
+namespace nkast.ProtonType.Logger.ViewModels
 {
     public class Message
     {

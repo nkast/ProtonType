@@ -20,7 +20,7 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Linq;
 
-namespace tainicom.ProtonType.App.ViewModels
+namespace nkast.ProtonType.App.ViewModels
 {
     class ObservableEnumerableAggregate<T> : IEnumerable<T>, INotifyCollectionChanged
     {

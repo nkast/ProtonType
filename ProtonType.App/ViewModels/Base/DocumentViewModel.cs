@@ -15,11 +15,11 @@
 #endregion
 
 using System;
-using tainicom.ProtonType.App.ViewModels;
+using nkast.ProtonType.App.ViewModels;
 
-namespace ProtonType.ViewModels.Base
+namespace nkast.ProtonType.ViewModels.Base
 {
-    public class DocumentViewModel : tainicom.ProtonType.Framework.ViewModels.DocumentViewModel
+    public class DocumentViewModel : nkast.ProtonType.Framework.ViewModels.DocumentViewModel
     {
         internal MainViewModel MainViewModel { get { return (MainViewModel)base.Model; } }
 

@@ -18,10 +18,10 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
-using tainicom.ProtonType.App.ViewModels;
-using tainicom.ProtonType.Framework.Modules;
+using nkast.ProtonType.App.ViewModels;
+using nkast.ProtonType.Framework.Modules;
 
-namespace tainicom.ProtonType.App.Modules
+namespace nkast.ProtonType.App.Modules
 {
     class ModulesMgr
     {
@@ -29,13 +29,13 @@ namespace tainicom.ProtonType.App.Modules
         private readonly Dictionary<Type, IModule> initializedModuleList = new Dictionary<Type, IModule>();
         private Site _site;
 
-        private ObservableEnumerableAggregate<tainicom.ProtonType.Framework.ViewModels.MenuViewModel> _menuGroups = new ObservableEnumerableAggregate<tainicom.ProtonType.Framework.ViewModels.MenuViewModel>();
-        private ObservableEnumerableAggregate<tainicom.ProtonType.Framework.ViewModels.ToolbarViewModel> _toolbarGroups = new ObservableEnumerableAggregate<tainicom.ProtonType.Framework.ViewModels.ToolbarViewModel>();
-        private ObservableEnumerableAggregate<tainicom.ProtonType.Framework.ViewModels.StatusBarItemViewModel> _statusbarGroups = new ObservableEnumerableAggregate<tainicom.ProtonType.Framework.ViewModels.StatusBarItemViewModel>();
+        private ObservableEnumerableAggregate<nkast.ProtonType.Framework.ViewModels.MenuViewModel> _menuGroups = new ObservableEnumerableAggregate<nkast.ProtonType.Framework.ViewModels.MenuViewModel>();
+        private ObservableEnumerableAggregate<nkast.ProtonType.Framework.ViewModels.ToolbarViewModel> _toolbarGroups = new ObservableEnumerableAggregate<nkast.ProtonType.Framework.ViewModels.ToolbarViewModel>();
+        private ObservableEnumerableAggregate<nkast.ProtonType.Framework.ViewModels.StatusBarItemViewModel> _statusbarGroups = new ObservableEnumerableAggregate<nkast.ProtonType.Framework.ViewModels.StatusBarItemViewModel>();
         
-        internal ObservableEnumerableAggregate<tainicom.ProtonType.Framework.ViewModels.MenuViewModel> MenuGroups { get { return _menuGroups; } }
-        internal ObservableEnumerableAggregate<tainicom.ProtonType.Framework.ViewModels.ToolbarViewModel> ToolbarGroups { get { return _toolbarGroups; } }
-        internal ObservableEnumerableAggregate<tainicom.ProtonType.Framework.ViewModels.StatusBarItemViewModel> StatusbarGroups { get { return _statusbarGroups; } }
+        internal ObservableEnumerableAggregate<nkast.ProtonType.Framework.ViewModels.MenuViewModel> MenuGroups { get { return _menuGroups; } }
+        internal ObservableEnumerableAggregate<nkast.ProtonType.Framework.ViewModels.ToolbarViewModel> ToolbarGroups { get { return _toolbarGroups; } }
+        internal ObservableEnumerableAggregate<nkast.ProtonType.Framework.ViewModels.StatusBarItemViewModel> StatusbarGroups { get { return _statusbarGroups; } }
         
         internal ISiteViewModel Site { get { return _site; } }
 
@@ -153,7 +153,7 @@ namespace tainicom.ProtonType.App.Modules
                     if (!type.IsPublic) continue;
                     if (type.IsAbstract) continue;
 
-                    Type typeIModule = type.GetInterface(typeof(tainicom.ProtonType.Framework.Modules.IModule).FullName);
+                    Type typeIModule = type.GetInterface(typeof(nkast.ProtonType.Framework.Modules.IModule).FullName);
                     if (typeIModule != null)
                     {
                         try

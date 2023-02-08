@@ -18,7 +18,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 
-namespace  tainicom.ProtonType.Logger.Views
+namespace  nkast.ProtonType.Logger.Views
 {
     public partial class ErrorListView : UserControl
     {

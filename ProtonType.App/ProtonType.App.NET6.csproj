@@ -6,7 +6,7 @@
     <UseWPF>true</UseWPF>
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>tainicom.ProtonType.App</RootNamespace>
+    <RootNamespace>nkast.ProtonType.App</RootNamespace>
     <AssemblyName>ProtonType</AssemblyName>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>

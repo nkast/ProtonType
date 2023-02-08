@@ -19,16 +19,16 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Windows;
-using tainicom.ProtonType.App.CommandMgr;
-using tainicom.ProtonType.App.Models;
-using tainicom.ProtonType.App.Views;
-using tainicom.ProtonType.Framework.Commands;
-using tainicom.ProtonType.Framework.Helpers;
-using tainicom.ProtonType.Framework.Modules;
-using tainicom.ProtonType.Framework.ViewModels;
+using nkast.ProtonType.App.CommandMgr;
+using nkast.ProtonType.App.Models;
+using nkast.ProtonType.App.Views;
+using nkast.ProtonType.Framework.Commands;
+using nkast.ProtonType.Framework.Helpers;
+using nkast.ProtonType.Framework.Modules;
+using nkast.ProtonType.Framework.ViewModels;
 using Win32 = Microsoft.Win32;
 
-namespace tainicom.ProtonType.App.ViewModels
+namespace nkast.ProtonType.App.ViewModels
 {
     public partial class MainViewModel : BaseViewModel
     {

@@ -15,9 +15,9 @@
 #endregion
 
 using System.Collections.Generic;
-using tainicom.ProtonType.Framework.ViewModels;
+using nkast.ProtonType.Framework.ViewModels;
 
-namespace tainicom.ProtonType.Framework.Modules
+namespace nkast.ProtonType.Framework.Modules
 {
     public interface IModuleUI : IModule
     {

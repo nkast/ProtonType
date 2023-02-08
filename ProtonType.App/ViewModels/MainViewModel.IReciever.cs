@@ -15,9 +15,9 @@
 #endregion
 
 using System;
-using tainicom.ProtonType.Framework.ViewModels;
+using nkast.ProtonType.Framework.ViewModels;
 
-namespace tainicom.ProtonType.App.ViewModels
+namespace nkast.ProtonType.App.ViewModels
 {
     public partial class MainViewModel
     {

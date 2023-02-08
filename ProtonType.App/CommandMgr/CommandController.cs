@@ -16,10 +16,10 @@
 
 using System;
 using System.Collections.Generic;
-using tainicom.ProtonType.Framework.Commands;
+using nkast.ProtonType.Framework.Commands;
 using System.Media;
 
-namespace tainicom.ProtonType.App.CommandMgr
+namespace nkast.ProtonType.App.CommandMgr
 {
     public class CommandController : ICommandController
     {

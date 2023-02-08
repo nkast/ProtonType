@@ -16,12 +16,12 @@
 
 using System;
 using System.Collections.Generic;
-using tainicom.ProtonType.App.ViewModels;
-using tainicom.ProtonType.Framework.Commands;
-using tainicom.ProtonType.Framework.Modules;
-using tainicom.ProtonType.Framework.ViewModels;
+using nkast.ProtonType.App.ViewModels;
+using nkast.ProtonType.Framework.Commands;
+using nkast.ProtonType.Framework.Modules;
+using nkast.ProtonType.Framework.ViewModels;
 
-namespace tainicom.ProtonType.App.Modules
+namespace nkast.ProtonType.App.Modules
 {
     internal partial class Site : ISiteViewModel, ISiteViewModelReceiver
     {

@@ -8,7 +8,7 @@
     <ProjectGuid>{98E2187D-2831-419D-A90F-723AC645D9ED}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>tainicom.ProtonType.FileSystem</RootNamespace>
+    <RootNamespace>nkast.ProtonType.FileSystem</RootNamespace>
     <AssemblyName>ProtonType.FileSystem</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

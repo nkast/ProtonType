@@ -14,10 +14,10 @@
 //   limitations under the License.
 #endregion
 
-using tainicom.ProtonType.Framework.Modules;
-using tainicom.ProtonType.Framework.ViewModels;
+using nkast.ProtonType.Framework.Modules;
+using nkast.ProtonType.Framework.ViewModels;
 
-namespace tainicom.ProtonType.Framework.Commands
+namespace nkast.ProtonType.Framework.Commands
 {
     public class RemovePaneCmd : CommandBase<ISiteViewModel>
     {

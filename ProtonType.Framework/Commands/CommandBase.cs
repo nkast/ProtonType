@@ -14,7 +14,7 @@
 //   limitations under the License.
 #endregion
 
-namespace tainicom.ProtonType.Framework.Commands
+namespace nkast.ProtonType.Framework.Commands
 {
     abstract public class CommandBase : CommandBase<IReceiver>
     {

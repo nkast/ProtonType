@@ -17,10 +17,10 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using tainicom.ProtonType.App.Models;
-using tainicom.ProtonType.Framework.Modules;
+using nkast.ProtonType.App.Models;
+using nkast.ProtonType.Framework.Modules;
 
-namespace tainicom.ProtonType.App.Modules
+namespace nkast.ProtonType.App.Modules
 {
     class FileDocumentsMgr
     {    

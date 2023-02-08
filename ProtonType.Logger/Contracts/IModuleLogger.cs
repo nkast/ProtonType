@@ -15,9 +15,9 @@
 #endregion
 
 using System;
-using tainicom.ProtonType.Framework.Modules;
+using nkast.ProtonType.Framework.Modules;
 
-namespace tainicom.ProtonType.Logger.Contracts
+namespace nkast.ProtonType.Logger.Contracts
 {
     public interface IModuleLogger : IModule
     {

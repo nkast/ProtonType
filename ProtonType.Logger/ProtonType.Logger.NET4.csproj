@@ -6,7 +6,7 @@
     <ProjectGuid>{C0862807-ACCB-4347-922D-7FF0D8560293}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>tainicom.ProtonType.Logger</RootNamespace>
+    <RootNamespace>nkast.ProtonType.Logger</RootNamespace>
     <AssemblyName>ProtonType.LoggerModule</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

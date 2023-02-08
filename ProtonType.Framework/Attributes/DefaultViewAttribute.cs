@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace tainicom.ProtonType.Framework.Attributes
+namespace nkast.ProtonType.Framework.Attributes
 {
     [AttributeUsage(AttributeTargets.Class)]
     public class DefaultViewAttribute : Attribute

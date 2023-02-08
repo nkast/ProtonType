@@ -17,7 +17,7 @@
 using System;
 using System.Windows.Data;
 
-namespace tainicom.ProtonType.App
+namespace nkast.ProtonType.App
 {
     public class ActiveDocumentConverter : IValueConverter
     {

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Windows;
-using tainicom.ProtonType.Framework.Modules;
+using nkast.ProtonType.Framework.Modules;
 
-namespace tainicom.ProtonType.Framework.Modules
+namespace nkast.ProtonType.Framework.Modules
 {
     abstract public class ModuleBase : DependencyObject, IModule
     {

@@ -14,7 +14,7 @@
 //   limitations under the License.
 #endregion
 
-namespace tainicom.ProtonType.Framework.Commands
+namespace nkast.ProtonType.Framework.Commands
 {
     public interface ICommand
     {

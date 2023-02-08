@@ -21,13 +21,13 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
-using tainicom.ProtonType.Framework.Commands;
-using tainicom.ProtonType.Framework.Modules;
-using tainicom.ProtonType.Framework.ViewModels;
-using tainicom.ProtonType.Logger.Contracts;
-using tainicom.ProtonType.Logger.ViewModels;
+using nkast.ProtonType.Framework.Commands;
+using nkast.ProtonType.Framework.Modules;
+using nkast.ProtonType.Framework.ViewModels;
+using nkast.ProtonType.Logger.Contracts;
+using nkast.ProtonType.Logger.ViewModels;
 
-namespace tainicom.ProtonType.Logger
+namespace nkast.ProtonType.Logger
 {
     public partial class LoggerModule : IModuleLogger
     {

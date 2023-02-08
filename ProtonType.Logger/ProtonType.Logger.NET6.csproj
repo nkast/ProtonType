@@ -6,7 +6,7 @@
     <UseWPF>true</UseWPF>
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
     <OutputType>Library</OutputType>
-    <RootNamespace>tainicom.ProtonType.Logger</RootNamespace>
+    <RootNamespace>nkast.ProtonType.Logger</RootNamespace>
     <AssemblyName>ProtonType.LoggerModule</AssemblyName>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>

@@ -20,7 +20,7 @@ using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Media;
 
-namespace tainicom.ProtonType.Framework.ViewModels
+namespace nkast.ProtonType.Framework.ViewModels
 {
     public class StatusBarItemViewModel : BaseViewModel
     {

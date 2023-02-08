@@ -19,9 +19,9 @@ using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
 using AvalonDock.Layout;
-using tainicom.ProtonType.Framework.Attributes;
+using nkast.ProtonType.Framework.Attributes;
 
-namespace tainicom.ProtonType.App
+namespace nkast.ProtonType.App
 {
     class PanesTemplateSelector: DataTemplateSelector
     {

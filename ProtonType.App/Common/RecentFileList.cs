@@ -19,9 +19,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
-using tainicom.ProtonType.App.ViewModels;
+using nkast.ProtonType.App.ViewModels;
 
-namespace tainicom.ProtonType.App.Common
+namespace nkast.ProtonType.App.Common
 {
     public class RecentFileList : Separator
     {
@@ -220,7 +220,7 @@ namespace tainicom.ProtonType.App.Common
             var mainViewModel = this.DataContext as MainViewModel;
             if (mainViewModel != null)
             {
-                List<tainicom.ProtonType.App.FileDocuments.RecentFilesMgr.RecentFileInfo> recentFileInfoList = mainViewModel.Model.RecentFilesMgr.RecentFiles;
+                List<nkast.ProtonType.App.FileDocuments.RecentFilesMgr.RecentFileInfo> recentFileInfoList = mainViewModel.Model.RecentFilesMgr.RecentFiles;
 
                 List<RecentFile> files = new List<RecentFile>(recentFileInfoList.Count);
 

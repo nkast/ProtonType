@@ -17,9 +17,9 @@
 using System;
 using System.Windows;
 using System.Windows.Controls;
-using tainicom.ProtonType.App.ViewModels;
+using nkast.ProtonType.App.ViewModels;
 
-namespace tainicom.ProtonType.App
+namespace nkast.ProtonType.App
 {
     /// <summary>
     /// Interaction logic for DialogPlaceholder.xaml

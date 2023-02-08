@@ -21,7 +21,7 @@ using System.IO;
 using System.Windows;
 using System.Windows.Threading;
 
-namespace tainicom.ProtonType.ViewModels
+namespace nkast.ProtonType.ViewModels
 {
     public class FolderItem : BrowserItem
     {

@@ -16,9 +16,9 @@
 
 using System.Collections.Generic;
 using System.IO;
-using tainicom.ProtonType.Framework.ViewModels;
+using nkast.ProtonType.Framework.ViewModels;
 
-namespace tainicom.ProtonType.ViewModels
+namespace nkast.ProtonType.ViewModels
 {
     public partial class FileBrowser : ToolViewModel
     {

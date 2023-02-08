@@ -16,7 +16,7 @@
 
 using System;
 
-namespace tainicom.ProtonType.App.ViewModels
+namespace nkast.ProtonType.App.ViewModels
 {
     public partial class MainViewModel : IDisposable
     {

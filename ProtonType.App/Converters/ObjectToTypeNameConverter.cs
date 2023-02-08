@@ -17,7 +17,7 @@
 using System;
 using System.Windows.Data;
 
-namespace tainicom.ProtonType.App.Converters
+namespace nkast.ProtonType.App.Converters
 {
     [ValueConversion(typeof(object), typeof(string))]
     public class ObjectToTypeNameConverter : IValueConverter

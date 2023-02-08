@@ -15,10 +15,10 @@
 #endregion
 
 using AvalonDock.Layout;
-using tainicom.ProtonType.Framework.Commands;
-using tainicom.ProtonType.Framework.Modules;
+using nkast.ProtonType.Framework.Commands;
+using nkast.ProtonType.Framework.Modules;
 
-namespace tainicom.ProtonType.App.Commands
+namespace nkast.ProtonType.App.Commands
 {
     public class HidePaneCmd : CommandBase<ISiteViewModel>
     {

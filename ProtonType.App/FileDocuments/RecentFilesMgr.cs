@@ -22,10 +22,10 @@ using System.Reflection;
 using System.Text;
 using System.Xml;
 using Microsoft.Win32;
-using tainicom.ProtonType.App.Common;
+using nkast.ProtonType.App.Common;
 
 
-namespace tainicom.ProtonType.App.FileDocuments
+namespace nkast.ProtonType.App.FileDocuments
 {
     public class RecentFilesMgr
     {

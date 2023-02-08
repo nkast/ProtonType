@@ -19,12 +19,12 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
-using tainicom.ProtonType.Framework.Attributes;
-using tainicom.ProtonType.Framework.Helpers;
-using tainicom.ProtonType.Framework.ViewModels;
-using tainicom.ProtonType.Logger.Views;
+using nkast.ProtonType.Framework.Attributes;
+using nkast.ProtonType.Framework.Helpers;
+using nkast.ProtonType.Framework.ViewModels;
+using nkast.ProtonType.Logger.Views;
 
-namespace tainicom.ProtonType.Logger.ViewModels
+namespace nkast.ProtonType.Logger.ViewModels
 {
     [DefaultView(typeof(ErrorListView), "bottomPane")]
     public class ErrorListViewModel : ToolViewModel

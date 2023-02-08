@@ -16,10 +16,10 @@
 
 using System;
 using System.Collections.Generic;
-using tainicom.ProtonType.Framework.Commands;
-using tainicom.ProtonType.Framework.ViewModels;
+using nkast.ProtonType.Framework.Commands;
+using nkast.ProtonType.Framework.ViewModels;
 
-namespace tainicom.ProtonType.Framework.Modules
+namespace nkast.ProtonType.Framework.Modules
 {
     public interface IModuleFile : IModule
     {

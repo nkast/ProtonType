@@ -15,14 +15,14 @@
 #endregion
 
 using System.Collections.Generic;
-using ProtonType.ViewModels.Base;
-using tainicom.ProtonType.Framework.Attributes;
-using tainicom.ProtonType.Framework.Commands;
-using tainicom.ProtonType.Framework.Helpers;
+using nkast.ProtonType.ViewModels.Base;
+using nkast.ProtonType.Framework.Attributes;
+using nkast.ProtonType.Framework.Commands;
+using nkast.ProtonType.Framework.Helpers;
 
-namespace tainicom.ProtonType.App.ViewModels
+namespace nkast.ProtonType.App.ViewModels
 {
-    [DefaultView(typeof(tainicom.ProtonType.App.Views.WelcomeView))]
+    [DefaultView(typeof(nkast.ProtonType.App.Views.WelcomeView))]
     class WelcomeViewModel : DocumentViewModel
     {        
         public RelayCommand OpenCommand { get; set; }
@@ -40,11 +40,11 @@ namespace tainicom.ProtonType.App.ViewModels
         {
             MainViewModel.Controller.EnqueueAndExecute(new RemovePaneCmd(MainViewModel.Site, this));
 
-            var fileInfo = (tainicom.ProtonType.App.FileDocuments.RecentFilesMgr.RecentFileInfo)obj;
+            var fileInfo = (nkast.ProtonType.App.FileDocuments.RecentFilesMgr.RecentFileInfo)obj;
             MainViewModel.FileOpen(fileInfo.FullFilename);
         }
 
-        public List<tainicom.ProtonType.App.FileDocuments.RecentFilesMgr.RecentFileInfo> RecentFiles
+        public List<nkast.ProtonType.App.FileDocuments.RecentFilesMgr.RecentFileInfo> RecentFiles
         {
             get { return this.MainViewModel.Model.RecentFilesMgr.RecentFiles; }
         }

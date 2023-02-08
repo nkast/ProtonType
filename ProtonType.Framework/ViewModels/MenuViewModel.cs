@@ -17,7 +17,7 @@ using System;
 using System.Windows.Controls;
 using System.Windows.Media;
 
-namespace tainicom.ProtonType.Framework.ViewModels
+namespace nkast.ProtonType.Framework.ViewModels
 {
     public class MenuViewModel : BaseViewModel
     {

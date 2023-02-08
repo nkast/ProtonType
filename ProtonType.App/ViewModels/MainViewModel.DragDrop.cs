@@ -17,9 +17,9 @@
 using System;
 using System.Collections.Generic;
 using System.Windows;
-using tainicom.ProtonType.Framework.Modules;
+using nkast.ProtonType.Framework.Modules;
 
-namespace tainicom.ProtonType.App.ViewModels
+namespace nkast.ProtonType.App.ViewModels
 {
     public partial class MainViewModel : IDisposable
     {

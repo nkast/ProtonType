@@ -17,9 +17,9 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using tainicom.ProtonType.Framework.Helpers;
+using nkast.ProtonType.Framework.Helpers;
 
-namespace tainicom.ProtonType.ViewModels
+namespace nkast.ProtonType.ViewModels
 {
     public class BrowserItem : NotificationObject, IComparable<BrowserItem>
     {

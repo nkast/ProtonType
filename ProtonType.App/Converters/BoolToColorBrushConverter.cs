@@ -19,7 +19,7 @@ using System.Globalization;
 using System.Windows.Data;
 using System.Windows.Media;
 
-namespace tainicom.ProtonType.App.Converters
+namespace nkast.ProtonType.App.Converters
 {
     [ValueConversion(typeof(bool), typeof(Brush))]
     class BoolToColorBrushConverter : IValueConverter

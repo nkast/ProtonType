@@ -18,9 +18,9 @@ using System;
 using System.ComponentModel;
 using System.IO;
 using System.Windows;
-using tainicom.ProtonType.App.ViewModels;
+using nkast.ProtonType.App.ViewModels;
 
-namespace tainicom.ProtonType.App.Views
+namespace nkast.ProtonType.App.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

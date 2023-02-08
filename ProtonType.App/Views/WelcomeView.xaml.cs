@@ -16,9 +16,9 @@
 
 using System;
 using System.Windows.Controls;
-using tainicom.ProtonType.App.ViewModels;
+using nkast.ProtonType.App.ViewModels;
 
-namespace tainicom.ProtonType.App.Views
+namespace nkast.ProtonType.App.Views
 {
     /// <summary>
     /// Interaction logic for WelcomeView.xaml

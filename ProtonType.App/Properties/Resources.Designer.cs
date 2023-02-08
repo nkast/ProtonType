@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace tainicom.ProtonType.App.Properties {
+namespace nkast.ProtonType.App.Properties {
     using System;
     
     

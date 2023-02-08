@@ -16,12 +16,12 @@
 
 using System;
 using System.Reflection;
-using tainicom.ProtonType.App.CommandMgr;
-using tainicom.ProtonType.App.FileDocuments;
-using tainicom.ProtonType.App.Modules;
-using tainicom.ProtonType.Framework.Commands;
+using nkast.ProtonType.App.CommandMgr;
+using nkast.ProtonType.App.FileDocuments;
+using nkast.ProtonType.App.Modules;
+using nkast.ProtonType.Framework.Commands;
 
-namespace tainicom.ProtonType.App.Models
+namespace nkast.ProtonType.App.Models
 {   
     public partial class MainModel
     {

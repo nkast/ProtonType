@@ -14,11 +14,11 @@
 //   limitations under the License.
 #endregion
 
-using tainicom.ProtonType.Framework.ViewModels;
+using nkast.ProtonType.Framework.ViewModels;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace tainicom.ProtonType.Framework
+namespace nkast.ProtonType.Framework
 {
     public class PanesStyleSelector : StyleSelector
     {

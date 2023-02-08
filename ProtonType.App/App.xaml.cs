@@ -17,7 +17,7 @@
 using System;
 using System.Windows;
 
-namespace tainicom.ProtonType.App
+namespace nkast.ProtonType.App
 {
     /// <summary>
     /// Interaction logic for App.xaml

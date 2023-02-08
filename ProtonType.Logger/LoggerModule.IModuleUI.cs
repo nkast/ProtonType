@@ -22,12 +22,12 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using tainicom.ProtonType.Framework.Commands;
-using tainicom.ProtonType.Framework.Modules;
-using tainicom.ProtonType.Framework.ViewModels;
-using tainicom.ProtonType.Logger.ViewModels;
+using nkast.ProtonType.Framework.Commands;
+using nkast.ProtonType.Framework.Modules;
+using nkast.ProtonType.Framework.ViewModels;
+using nkast.ProtonType.Logger.ViewModels;
 
-namespace tainicom.ProtonType.Logger
+namespace nkast.ProtonType.Logger
 {
     public partial class LoggerModule : IModuleUI
     {
@@ -81,12 +81,12 @@ namespace tainicom.ProtonType.Logger
         
 
         #region IModuleUI Members
-        ObservableCollection<tainicom.ProtonType.Framework.ViewModels.MenuViewModel> _menus = new ObservableCollection<tainicom.ProtonType.Framework.ViewModels.MenuViewModel>();
-        ObservableCollection<tainicom.ProtonType.Framework.ViewModels.ToolbarViewModel> _toolbars = new ObservableCollection<tainicom.ProtonType.Framework.ViewModels.ToolbarViewModel>();
-        ObservableCollection<tainicom.ProtonType.Framework.ViewModels.StatusBarItemViewModel> _statusbars = new ObservableCollection<tainicom.ProtonType.Framework.ViewModels.StatusBarItemViewModel>();
-        IEnumerable<tainicom.ProtonType.Framework.ViewModels.MenuViewModel> IModuleUI.Menus { get { return _menus; } }
-        IEnumerable<tainicom.ProtonType.Framework.ViewModels.ToolbarViewModel> IModuleUI.Toolbars { get { return _toolbars; } }
-        IEnumerable<tainicom.ProtonType.Framework.ViewModels.StatusBarItemViewModel> IModuleUI.StatusBars { get { return _statusbars; } }
+        ObservableCollection<nkast.ProtonType.Framework.ViewModels.MenuViewModel> _menus = new ObservableCollection<nkast.ProtonType.Framework.ViewModels.MenuViewModel>();
+        ObservableCollection<nkast.ProtonType.Framework.ViewModels.ToolbarViewModel> _toolbars = new ObservableCollection<nkast.ProtonType.Framework.ViewModels.ToolbarViewModel>();
+        ObservableCollection<nkast.ProtonType.Framework.ViewModels.StatusBarItemViewModel> _statusbars = new ObservableCollection<nkast.ProtonType.Framework.ViewModels.StatusBarItemViewModel>();
+        IEnumerable<nkast.ProtonType.Framework.ViewModels.MenuViewModel> IModuleUI.Menus { get { return _menus; } }
+        IEnumerable<nkast.ProtonType.Framework.ViewModels.ToolbarViewModel> IModuleUI.Toolbars { get { return _toolbars; } }
+        IEnumerable<nkast.ProtonType.Framework.ViewModels.StatusBarItemViewModel> IModuleUI.StatusBars { get { return _statusbars; } }
         #endregion IModuleUI Members
         
     }

@@ -13,9 +13,9 @@
 //   See the License for the specific language governing permissions and
 //   limitations under the License.
 #endregion
-using tainicom.ProtonType.Framework.Helpers;
+using nkast.ProtonType.Framework.Helpers;
 
-namespace tainicom.ProtonType.Framework.ViewModels
+namespace nkast.ProtonType.Framework.ViewModels
 {
     public class BaseViewModel : NotificationObject
     {

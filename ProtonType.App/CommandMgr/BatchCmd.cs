@@ -16,9 +16,9 @@
 
 using System;
 using System.Collections.Generic;
-using tainicom.ProtonType.Framework.Commands;
+using nkast.ProtonType.Framework.Commands;
 
-namespace tainicom.ProtonType.App.CommandMgr
+namespace nkast.ProtonType.App.CommandMgr
 {
     class BatchCmd : ICommandQueue
     {

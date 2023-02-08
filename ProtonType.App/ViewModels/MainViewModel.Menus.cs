@@ -18,10 +18,10 @@ using System.Collections.Specialized;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Media;
-using tainicom.ProtonType.App.Views;
-using tainicom.ProtonType.Framework.ViewModels;
+using nkast.ProtonType.App.Views;
+using nkast.ProtonType.Framework.ViewModels;
 
-namespace tainicom.ProtonType.App.ViewModels
+namespace nkast.ProtonType.App.ViewModels
 {
     public partial class MainViewModel
     {

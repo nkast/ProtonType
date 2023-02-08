@@ -18,11 +18,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using tainicom.ProtonType.Framework.Attributes;
-using tainicom.ProtonType.Framework.ViewModels;
-using tainicom.ProtonType.Logger.Views;
+using nkast.ProtonType.Framework.Attributes;
+using nkast.ProtonType.Framework.ViewModels;
+using nkast.ProtonType.Logger.Views;
 
-namespace tainicom.ProtonType.Logger.ViewModels
+namespace nkast.ProtonType.Logger.ViewModels
 {
     [DefaultView(typeof(OutputView), "bottomPane")]
     public class OutputViewModel : ToolViewModel
