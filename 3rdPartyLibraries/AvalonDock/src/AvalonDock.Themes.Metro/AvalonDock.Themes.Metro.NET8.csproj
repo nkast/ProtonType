@@ -2,13 +2,13 @@
 
   <PropertyGroup>
     <EnableDefaultItems>false</EnableDefaultItems>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
     <OutputType>library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AvalonDock.Themes.MetroDark</RootNamespace>
-    <AssemblyName>AvalonDock.Themes.MetroDark</AssemblyName>
+    <RootNamespace>AvalonDock.Themes.Metro</RootNamespace>
+    <AssemblyName>AvalonDock.Themes.Metro</AssemblyName>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -17,21 +17,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
   </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Xaml">
-      <RequiredTargetFramework>4.0</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="WindowsBase" />
-    <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
-  </ItemGroup>
+
   <ItemGroup>
     <Compile Include="AssemblyVersionInfo.cs" />
     <Compile Include="AssemblyVersionInfoCommon.cs" />
@@ -85,7 +71,7 @@
     <Resource Include="Images\VTabGroup.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AvalonDock\AvalonDock.NET6.csproj">
+    <ProjectReference Include="..\AvalonDock\AvalonDock.NET8.csproj">
     </ProjectReference>
   </ItemGroup>
 </Project>

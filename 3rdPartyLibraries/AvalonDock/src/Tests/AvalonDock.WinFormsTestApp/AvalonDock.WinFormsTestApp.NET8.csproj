@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <EnableDefaultItems>false</EnableDefaultItems>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <UseWindowsForms>true</UseWindowsForms>
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
@@ -18,23 +18,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <OutputPath>bin\Release\</OutputPath>
   </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xaml" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-    <Reference Include="WindowsBase" />
-    <Reference Include="WindowsFormsIntegration" />
-  </ItemGroup>
+
   <ItemGroup>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
@@ -59,17 +43,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\AvalonDock.Themes.Aero\AvalonDock.Themes.Aero.NET6.csproj">
+    <ProjectReference Include="..\..\AvalonDock.Themes.Aero\AvalonDock.Themes.Aero.NET8.csproj">
     </ProjectReference>
-    <ProjectReference Include="..\..\AvalonDock.Themes.Expression\AvalonDock.Themes.Expression.NET6.csproj">
+    <ProjectReference Include="..\..\AvalonDock.Themes.Expression\AvalonDock.Themes.Expression.NET8.csproj">
     </ProjectReference>
-    <ProjectReference Include="..\..\AvalonDock.Themes.MetroDark\AvalonDock.Themes.MetroDark.NET6.csproj">
+    <ProjectReference Include="..\..\AvalonDock.Themes.MetroDark\AvalonDock.Themes.MetroDark.NET8.csproj">
     </ProjectReference>
-    <ProjectReference Include="..\..\AvalonDock.Themes.Metro\AvalonDock.Themes.Metro.NET6.csproj">
+    <ProjectReference Include="..\..\AvalonDock.Themes.Metro\AvalonDock.Themes.Metro.NET8.csproj">
     </ProjectReference>
-    <ProjectReference Include="..\..\AvalonDock.Themes.VS2010\AvalonDock.Themes.VS2010.NET6.csproj">
+    <ProjectReference Include="..\..\AvalonDock.Themes.VS2010\AvalonDock.Themes.VS2010.NET8.csproj">
     </ProjectReference>
-    <ProjectReference Include="..\..\AvalonDock\AvalonDock.NET6.csproj">
+    <ProjectReference Include="..\..\AvalonDock\AvalonDock.NET8.csproj">
     </ProjectReference>
   </ItemGroup>
 </Project>

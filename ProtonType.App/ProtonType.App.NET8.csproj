@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <EnableDefaultItems>false</EnableDefaultItems>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
     <OutputType>WinExe</OutputType>
@@ -112,11 +112,11 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\3rdPartyLibraries\AvalonDock\src\AvalonDock\AvalonDock.NET6.csproj">
+    <ProjectReference Include="..\3rdPartyLibraries\AvalonDock\src\AvalonDock\AvalonDock.NET8.csproj">
     </ProjectReference>
-    <ProjectReference Include="..\3rdPartyLibraries\AvalonDock\src\AvalonDock.Themes.MetroDark\AvalonDock.Themes.MetroDark.NET6.csproj">
+    <ProjectReference Include="..\3rdPartyLibraries\AvalonDock\src\AvalonDock.Themes.MetroDark\AvalonDock.Themes.MetroDark.NET8.csproj">
     </ProjectReference>
-    <ProjectReference Include="$(PROTONTYPE_PATH)\ProtonType.Framework\ProtonType.Framework.NET6.csproj">
+    <ProjectReference Include="$(PROTONTYPE_PATH)\ProtonType.Framework\ProtonType.Framework.NET8.csproj">
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
