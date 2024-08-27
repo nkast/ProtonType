@@ -74,7 +74,7 @@ namespace nkast.ProtonType.App.Modules
 
         private void InitializeModules(Site _site)
         {
-            foreach (var module in _modules)
+            foreach (IModule module in _modules)
             {
                 if (!initializedModuleList.ContainsKey(module.GetType()))
                 {
@@ -102,7 +102,7 @@ namespace nkast.ProtonType.App.Modules
 
         internal IEnumerable<TModule> GetModules<TModule>() where TModule : class , IModule
         {
-            var itemType = typeof(TModule);
+            Type itemType = typeof(TModule);
             for (int i = 0; i < _modules.Count; i++)
             {
                 if (itemType.IsInstanceOfType(_modules[i]))
@@ -117,12 +117,12 @@ namespace nkast.ProtonType.App.Modules
                 return;
 
             //Go through all the files in the directory
-            var files = Directory.GetFiles(baseDirectory);
-            foreach(var filename in files)
+            string[] files = Directory.GetFiles(baseDirectory);
+            foreach (string filename in files)
                 LoadModule(filename);
 
             //Go through all the directories in the directory
-            foreach(var childDirectory in Directory.GetDirectories(baseDirectory))
+            foreach (string childDirectory in Directory.GetDirectories(baseDirectory))
             {
                 string name = Path.GetFileName(childDirectory);
                 string filename = Path.Combine(childDirectory, name + ".dll");
@@ -147,7 +147,7 @@ namespace nkast.ProtonType.App.Modules
 
             try
             {
-                var types = asm.GetTypes();
+                Type[] types = asm.GetTypes();
                 foreach (Type type in types)
                 {
                     if (!type.IsPublic) continue;
@@ -208,7 +208,7 @@ namespace nkast.ProtonType.App.Modules
                 System.Diagnostics.Debug.WriteLine("_modules[{0}] = {1:X8}, {2}", i, _modules[i].GetHashCode(), _modules[i].GetType().Name);
 
             int i2 =0;
-            foreach(var key in initializedModuleList.Keys)
+            foreach (Type key in initializedModuleList.Keys)
             {
                 System.Diagnostics.Debug.WriteLine("initializedModuleList[{0}] = {1:X8}, {2}", i2, initializedModuleList[key].GetHashCode(), initializedModuleList[key].GetType().Name);
                 i2++;
