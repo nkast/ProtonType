@@ -28,7 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ProtonType.Framework\ProtonType.Framework.NET8.csproj" />
+    <ProjectReference Include="..\ProtonType.Framework\ProtonType.Framework.csproj" />
   </ItemGroup>
 
   <ItemGroup>
