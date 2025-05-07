@@ -47,9 +47,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\AvalonDock.Themes.MetroDark\AvalonDock.Themes.MetroDark.NET8.csproj" />
-    <ProjectReference Include="..\..\AvalonDock.Themes.VS2010\AvalonDock.Themes.VS2010.NET8.csproj" />
-    <ProjectReference Include="..\..\AvalonDock\AvalonDock.NET8.csproj" />
+    <ProjectReference Include="..\..\AvalonDock.Themes.MetroDark\AvalonDock.Themes.MetroDark.csproj" />
+    <ProjectReference Include="..\..\AvalonDock.Themes.VS2010\AvalonDock.Themes.VS2010.csproj" />
+    <ProjectReference Include="..\..\AvalonDock\AvalonDock.csproj" />
   </ItemGroup>
 
   <ItemGroup>

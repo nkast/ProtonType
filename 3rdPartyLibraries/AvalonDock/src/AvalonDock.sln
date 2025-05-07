@@ -3,25 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvalonDock.TestApp.NET8", "Tests\AvalonDock.TestApp\AvalonDock.TestApp.NET8.csproj", "{339BC0D5-2A54-40ED-9850-7ED65182E6E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvalonDock.TestApp", "Tests\AvalonDock.TestApp\AvalonDock.TestApp.csproj", "{339BC0D5-2A54-40ED-9850-7ED65182E6E1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvalonDock.MVVMTestApp.NET8", "Tests\AvalonDock.MVVMTestApp\AvalonDock.MVVMTestApp.NET8.csproj", "{AFD48591-D66C-47F3-86E7-ACE5AD3D4FE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvalonDock.MVVMTestApp", "Tests\AvalonDock.MVVMTestApp\AvalonDock.MVVMTestApp.csproj", "{AFD48591-D66C-47F3-86E7-ACE5AD3D4FE4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvalonDock.WinFormsTestApp.NET8", "Tests\AvalonDock.WinFormsTestApp\AvalonDock.WinFormsTestApp.NET8.csproj", "{AB95D11D-7239-4F3D-88FB-278B7C8EB6DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvalonDock.WinFormsTestApp", "Tests\AvalonDock.WinFormsTestApp\AvalonDock.WinFormsTestApp.csproj", "{AB95D11D-7239-4F3D-88FB-278B7C8EB6DF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test Projects", "Test Projects", "{1D267DDB-F2DE-4B70-87C1-E93A0C2D73F4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvalonDock.NET8", "AvalonDock\AvalonDock.NET8.csproj", "{DB81988F-E0F2-45A0-A1FD-8C37F3D35244}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvalonDock", "AvalonDock\AvalonDock.csproj", "{DB81988F-E0F2-45A0-A1FD-8C37F3D35244}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvalonDock.Themes.VS2010.NET8", "AvalonDock.Themes.VS2010\AvalonDock.Themes.VS2010.NET8.csproj", "{B3FC3E21-5F2D-4581-AEA2-59F671CFFC21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvalonDock.Themes.VS2010", "AvalonDock.Themes.VS2010\AvalonDock.Themes.VS2010.csproj", "{B3FC3E21-5F2D-4581-AEA2-59F671CFFC21}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvalonDock.Themes.Expression.NET8", "AvalonDock.Themes.Expression\AvalonDock.Themes.Expression.NET8.csproj", "{488DD8F7-9D3C-4F53-BD1F-84A095D9BC10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvalonDock.Themes.Expression", "AvalonDock.Themes.Expression\AvalonDock.Themes.Expression.csproj", "{488DD8F7-9D3C-4F53-BD1F-84A095D9BC10}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvalonDock.Themes.Metro.NET8", "AvalonDock.Themes.Metro\AvalonDock.Themes.Metro.NET8.csproj", "{89286EB4-B4A1-418C-839A-067B00F442D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvalonDock.Themes.Metro", "AvalonDock.Themes.Metro\AvalonDock.Themes.Metro.csproj", "{89286EB4-B4A1-418C-839A-067B00F442D8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvalonDock.Themes.Aero.NET8", "AvalonDock.Themes.Aero\AvalonDock.Themes.Aero.NET8.csproj", "{BA72CCE0-A9FB-4995-B496-7FEC5C87B85B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvalonDock.Themes.Aero", "AvalonDock.Themes.Aero\AvalonDock.Themes.Aero.csproj", "{BA72CCE0-A9FB-4995-B496-7FEC5C87B85B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvalonDock.Themes.MetroDark.NET8", "AvalonDock.Themes.MetroDark\AvalonDock.Themes.MetroDark.NET8.csproj", "{7022A42A-7B99-40E4-91F4-E6340334E0F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvalonDock.Themes.MetroDark", "AvalonDock.Themes.MetroDark\AvalonDock.Themes.MetroDark.csproj", "{7022A42A-7B99-40E4-91F4-E6340334E0F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

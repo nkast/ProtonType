@@ -68,7 +68,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AvalonDock\AvalonDock.NET8.csproj" />
+    <ProjectReference Include="..\AvalonDock\AvalonDock.csproj" />
   </ItemGroup>
 
   <ItemGroup>
