@@ -2,23 +2,22 @@
 
   <PropertyGroup>
     <EnableDefaultItems>false</EnableDefaultItems>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFrameworks>net40;net8.0-windows</TargetFrameworks>
     <UseWPF>true</UseWPF>
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+    <ProjectGuid>{C0862807-ACCB-4347-922D-7FF0D8560293}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>nkast.ProtonType.Logger</RootNamespace>
     <AssemblyName>ProtonType.LoggerModule</AssemblyName>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <OutputPath>$(SolutionDir)bin\$(Configuration)\$(Platform)\net8</OutputPath>
+    <OutputPath>$(SolutionDir)bin\$(Configuration)\$(Platform)\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ProtonType.Framework\ProtonType.Framework.NET8.csproj">
-      <Private>False</Private>
-    </ProjectReference>
+    <ProjectReference Include="..\ProtonType.Framework\ProtonType.Framework.NET8.csproj" />
+
   </ItemGroup>
-  
+
   <ItemGroup>
     <Compile Include="Contracts\IModuleLogger.cs" />
     <Compile Include="LoggerModule.cs" />
@@ -40,7 +39,7 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
-  
+
   <ItemGroup>
     <Resource Include="Icons\BuildErrorList_16x.png" />
     <Resource Include="Icons\Output_16xLG.png" />
@@ -52,5 +51,12 @@
     <Resource Include="Icons\StatusWarning_12x.png" />
     <Resource Include="Icons\StatusWarning_16x.png" />
   </ItemGroup>
-  
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
 </Project>

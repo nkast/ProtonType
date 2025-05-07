@@ -2,15 +2,16 @@
 
   <PropertyGroup>
     <EnableDefaultItems>false</EnableDefaultItems>
-    <TargetFramework>net48</TargetFramework>
+    <TargetFrameworks>net48;net8.0-windows</TargetFrameworks>
     <UseWPF>true</UseWPF>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
     <ProjectGuid>{D163FFB3-33C5-44F1-9C87-81E0A5B6AC0B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>nkast.ProtonType.App</RootNamespace>
     <AssemblyName>ProtonType</AssemblyName>
     <DefineConstants>$(DefineConstants);</DefineConstants>
-    <OutputPath>$(SolutionDir)bin\$(Configuration)\$(Platform)\net4\</OutputPath>
+    <OutputPath>$(SolutionDir)bin\$(Configuration)\$(Platform)\</OutputPath>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -31,12 +32,13 @@
       <HintPath>..\3rdPartyLibraries\MahApps.Metro\Libraries\1.6.5\net40\MahApps.Metro.dll</HintPath>
     </Reference>
   </ItemGroup>
-	
+
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+
     <Compile Include="ActiveDocumentConverter.cs" />
     <Compile Include="CommandMgr\BatchCmd.cs" />
     <Compile Include="CommandMgr\CommandController.cs" />
@@ -146,7 +148,7 @@
     </None>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
-	
+
   <ItemGroup>
     <ProjectReference Include="..\3rdPartyLibraries\AvalonDock\src\AvalonDock\AvalonDock.NET4.csproj">
       <Project>{DB81988F-E0F2-45A0-A1FD-8C37F3D35244}</Project>
@@ -161,7 +163,7 @@
       <Name>ProtonType.Framework.NET4</Name>
     </ProjectReference>
   </ItemGroup>
-	
+
   <ItemGroup>
     <Resource Include="ProtonType.ico" />
     <Resource Include="Icons\NewDocument.png" />

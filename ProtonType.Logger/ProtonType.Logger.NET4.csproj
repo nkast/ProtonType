@@ -2,23 +2,20 @@
 
   <PropertyGroup>
     <EnableDefaultItems>false</EnableDefaultItems>
-    <TargetFramework>net40</TargetFramework>
+    <TargetFrameworks>net40;net8.0-windows</TargetFrameworks>
     <UseWPF>true</UseWPF>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
     <ProjectGuid>{C0862807-ACCB-4347-922D-7FF0D8560293}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <RootNamespace>nkast.ProtonType.Logger</RootNamespace>
     <AssemblyName>ProtonType.LoggerModule</AssemblyName>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <OutputPath>$(SolutionDir)bin\$(Configuration)\AnyCPU\net4\</OutputPath>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <OutputPath>$(SolutionDir)bin\$(Configuration)\$(Platform)\</OutputPath>
   </PropertyGroup>
-	
+
   <ItemGroup>
-    <ProjectReference Include="..\ProtonType.Framework\ProtonType.Framework.NET4.csproj">
-      <Project>{7ED07123-58DF-440E-BE73-FA37F48AF799}</Project>
-      <Name>ProtonType.Framework.NET4</Name>
-      <Private>False</Private>
-    </ProjectReference>
+    <ProjectReference Include="..\ProtonType.Framework\ProtonType.Framework.NET4.csproj" />
+
   </ItemGroup>
 
   <ItemGroup>
@@ -40,6 +37,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Page Include="Views\ErrorListView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\OutputView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Icons\BuildErrorList_16x.png" />
     <Resource Include="Icons\Output_16xLG.png" />
     <Resource Include="Icons\ClearWindowContent_16x.png" />
@@ -49,17 +57,6 @@
     <Resource Include="Icons\StatusInformation_16x.png" />
     <Resource Include="Icons\StatusWarning_12x.png" />
     <Resource Include="Icons\StatusWarning_16x.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Include="Views\ErrorListView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\OutputView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
   </ItemGroup>
 
   <ItemGroup>

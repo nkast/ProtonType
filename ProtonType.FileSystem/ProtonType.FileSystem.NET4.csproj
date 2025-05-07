@@ -2,15 +2,15 @@
 
   <PropertyGroup>
     <EnableDefaultItems>false</EnableDefaultItems>
-    <TargetFramework>net40</TargetFramework>
+    <TargetFrameworks>net40;net8.0-windows</TargetFrameworks>
     <UseWPF>true</UseWPF>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
     <ProjectGuid>{98E2187D-2831-419D-A90F-723AC645D9ED}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <RootNamespace>nkast.ProtonType.FileSystem</RootNamespace>
     <AssemblyName>ProtonType.FileSystem</AssemblyName>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <OutputPath>$(SolutionDir)bin\$(Configuration)\AnyCPU\net4\</OutputPath>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <OutputPath>$(SolutionDir)bin\$(Configuration)\$(Platform)\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,10 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ProtonType.Framework\ProtonType.Framework.NET4.csproj">
-      <Project>{7ed07123-58df-440e-be73-fa37f48af799}</Project>
-      <Name>ProtonType.Framework.NET4</Name>
-    </ProjectReference>
+    <ProjectReference Include="..\ProtonType.Framework\ProtonType.Framework.NET4.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -2,15 +2,15 @@
 
   <PropertyGroup>
     <EnableDefaultItems>false</EnableDefaultItems>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFrameworks>net40;net8.0-windows</TargetFrameworks>
     <UseWPF>true</UseWPF>
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+    <ProjectGuid>{98E2187D-2831-419D-A90F-723AC645D9ED}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>nkast.ProtonType.FileSystem</RootNamespace>
     <AssemblyName>ProtonType.FileSystem</AssemblyName>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <OutputPath>$(SolutionDir)bin\$(Configuration)\$(Platform)\net8</OutputPath>
+    <OutputPath>$(SolutionDir)bin\$(Configuration)\$(Platform)\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,14 +19,23 @@
     <Compile Include="ViewModels\FileBrowser.cs" />
     <Compile Include="ViewModels\FolderItem.cs" />
   </ItemGroup>
+
   <ItemGroup>
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Xaml" />
     <Reference Include="WindowsBase" />
   </ItemGroup>
+
   <ItemGroup>
-    <ProjectReference Include="..\ProtonType.Framework\ProtonType.Framework.NET8.csproj">
-    </ProjectReference>
+    <ProjectReference Include="..\ProtonType.Framework\ProtonType.Framework.NET8.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
 </Project>

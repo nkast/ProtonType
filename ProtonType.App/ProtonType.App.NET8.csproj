@@ -2,17 +2,17 @@
 
   <PropertyGroup>
     <EnableDefaultItems>false</EnableDefaultItems>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFrameworks>net48;net8.0-windows</TargetFrameworks>
     <UseWPF>true</UseWPF>
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+    <ProjectGuid>{D163FFB3-33C5-44F1-9C87-81E0A5B6AC0B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>nkast.ProtonType.App</RootNamespace>
     <AssemblyName>ProtonType</AssemblyName>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <OutputPath>$(SolutionDir)bin\$(Configuration)\$(Platform)\net8</OutputPath>
+    <OutputPath>$(SolutionDir)bin\$(Configuration)\$(Platform)\</OutputPath>
   </PropertyGroup>
-  
+
   <PropertyGroup>
     <ApplicationIcon>ProtonType.ico</ApplicationIcon>
   </PropertyGroup>
@@ -28,13 +28,13 @@
     </Reference>
     <Reference Include="PresentationFramework.Aero" />
   </ItemGroup>
+
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
-    
+
     <Compile Include="ActiveDocumentConverter.cs" />
-    
     <Compile Include="CommandMgr\BatchCmd.cs" />
     <Compile Include="CommandMgr\CommandController.cs" />
     <Compile Include="Commands\HidePaneCmd.cs" />
@@ -111,6 +111,7 @@
     </None>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\3rdPartyLibraries\AvalonDock\src\AvalonDock\AvalonDock.NET8.csproj">
     </ProjectReference>
@@ -119,6 +120,7 @@
     <ProjectReference Include="$(PROTONTYPE_PATH)\ProtonType.Framework\ProtonType.Framework.NET8.csproj">
     </ProjectReference>
   </ItemGroup>
+
   <ItemGroup>
     <Resource Include="ProtonType.ico" />
     <Resource Include="Icons\NewDocument.png" />
@@ -129,4 +131,12 @@
     <Resource Include="Icons\Edit\Redo.png" />
     <Resource Include="Icons\Edit\Undo.png" />
   </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
 </Project>
