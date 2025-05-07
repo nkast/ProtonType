@@ -1,21 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  
+
   <PropertyGroup>
     <EnableDefaultItems>false</EnableDefaultItems>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <EnableDefaultPageItems>false</EnableDefaultPageItems>
+	<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <TargetFrameworks>net40;net8.0-windows</TargetFrameworks>
+    <ProjectGuid>{DB81988F-E0F2-45A0-A1FD-8C37F3D35244}</ProjectGuid>
     <UseWPF>true</UseWPF>
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
     <OutputType>library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AvalonDock</RootNamespace>
     <AssemblyName>AvalonDock</AssemblyName>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>bin\Debug\</OutputPath>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <OutputPath>bin\Release\</OutputPath>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <DefineConstants>$(DefineConstants);</DefineConstants>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -176,6 +175,7 @@
     </EmbeddedResource>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
+
   <ItemGroup>
     <Resource Include="Themes\Generic\Images\DockBottom.PNG" />
     <Resource Include="Themes\Generic\Images\DockLeft.PNG" />
@@ -199,17 +199,21 @@
     <Resource Include="Themes\Generic\Images\PinDocMenu.png" />
     <Resource Include="Themes\Generic\Images\PinMenu.png" />
     <Resource Include="Themes\Generic\Images\VTabGroup.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Themes\Generic\Images\PinMaximize.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Themes\Generic\Images\PinRestore.png" />
   </ItemGroup>
+
   <ItemGroup>
     <Page Include="Themes\generic.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
-  <ItemGroup />
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
 </Project>

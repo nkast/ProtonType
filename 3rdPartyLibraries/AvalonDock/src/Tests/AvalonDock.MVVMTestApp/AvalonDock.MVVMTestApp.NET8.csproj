@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <EnableDefaultItems>false</EnableDefaultItems>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFrameworks>net40;net8.0-windows</TargetFrameworks>
     <UseWPF>true</UseWPF>
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
     <OutputType>WinExe</OutputType>
@@ -10,12 +10,8 @@
     <RootNamespace>AvalonDock.MVVMTestApp</RootNamespace>
     <AssemblyName>AvalonDock.MVVMTestApp</AssemblyName>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
-    <OutputPath>bin\Debug\</OutputPath>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
-    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>$(DefineConstants);</DefineConstants>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -39,20 +35,28 @@
     <Compile Include="App.xaml.cs" />
     <Compile Include="MainWindow.xaml.cs" />
   </ItemGroup>
+
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <AppDesigner Include="Properties\" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\AvalonDock.Themes.VS2010\AvalonDock.Themes.VS2010.NET8.csproj">
-    </ProjectReference>
-    <ProjectReference Include="..\..\AvalonDock\AvalonDock.NET8.csproj">
-    </ProjectReference>
-  </ItemGroup>
+
   <ItemGroup>
     <Resource Include="Images\document.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\property-blue.png" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\AvalonDock.Themes.MetroDark\AvalonDock.Themes.MetroDark.NET8.csproj" />
+    <ProjectReference Include="..\..\AvalonDock.Themes.VS2010\AvalonDock.Themes.VS2010.NET8.csproj" />
+    <ProjectReference Include="..\..\AvalonDock\AvalonDock.NET8.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
 </Project>
