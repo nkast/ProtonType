@@ -172,6 +172,16 @@ namespace nkast.ProtonType.App.Modules
             {
                 System.Diagnostics.Debug.WriteLine("failed to load module: " + ex.FileName);
             }
+            catch (ReflectionTypeLoadException rtlex)
+            {
+                System.Diagnostics.Debug.WriteLine("failed to load module: " + file);
+                System.Diagnostics.Debug.WriteLine(" " + rtlex.Message);
+                foreach (Exception lex in rtlex.LoaderExceptions)
+                {
+                    System.Diagnostics.Debug.WriteLine(" " + lex.Message);
+                }
+                throw;
+            }
 
             return true;
         }
