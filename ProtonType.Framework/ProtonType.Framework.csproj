@@ -10,7 +10,6 @@
     <RootNamespace>nkast.ProtonType.Framework</RootNamespace>
     <AssemblyName>ProtonType.Framework</AssemblyName>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <OutputPath>$(SolutionDir)bin\$(Configuration)\$(Platform)\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>

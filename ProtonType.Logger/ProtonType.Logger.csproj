@@ -10,7 +10,6 @@
     <RootNamespace>nkast.ProtonType.Logger</RootNamespace>
     <AssemblyName>ProtonType.LoggerModule</AssemblyName>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <OutputPath>$(SolutionDir)bin\$(Configuration)\$(Platform)\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
