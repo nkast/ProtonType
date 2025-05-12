@@ -144,6 +144,11 @@ namespace nkast.ProtonType.App.Modules
                 System.Diagnostics.Debug.WriteLine("ModulesMgr: Failed to load Module: " + Path.GetFileName(file));
                 return false;
             }
+            catch (FileLoadException flex)
+            {
+                System.Diagnostics.Debug.WriteLine("ModulesMgr: Failed to load Module: " + Path.GetFileName(file));
+                throw;
+            }
 
             try
             {
