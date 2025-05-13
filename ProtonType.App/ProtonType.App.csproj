@@ -9,7 +9,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>nkast.ProtonType.App</RootNamespace>
     <AssemblyName>ProtonType</AssemblyName>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
     <OutputPath>$(SolutionDir)bin\$(Configuration)\$(Platform)\</OutputPath>
   </PropertyGroup>
 
@@ -19,6 +19,7 @@
   <PropertyGroup>
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
+
   <ItemGroup>
     <Reference Include="Accessibility">
       <EmbedInteropTypes>False</EmbedInteropTypes>
@@ -33,7 +34,6 @@
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
-
     <Compile Include="ActiveDocumentConverter.cs" />
     <Compile Include="CommandMgr\BatchCmd.cs" />
     <Compile Include="CommandMgr\CommandController.cs" />
