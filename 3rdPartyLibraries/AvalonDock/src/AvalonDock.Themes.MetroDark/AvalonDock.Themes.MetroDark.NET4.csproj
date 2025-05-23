@@ -17,20 +17,16 @@
   <ItemGroup>
     <Compile Include="AssemblyVersionInfo.cs" />
     <Compile Include="AssemblyVersionInfoCommon.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MetroTheme.cs" />
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="Brushes.xaml">
       <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
     <Page Include="Theme.xaml">
       <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -71,10 +67,7 @@
     <Resource Include="Images\VTabGroup.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AvalonDock\AvalonDock.NET4.csproj">
-      <Project>{DB81988F-E0F2-45A0-A1FD-8C37F3D35244}</Project>
-      <Name>AvalonDock.NET4</Name>
-    </ProjectReference>
+    <ProjectReference Include="..\AvalonDock\AvalonDock.NET4.csproj" />
   </ItemGroup>
 
   <ItemGroup>
