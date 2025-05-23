@@ -10,7 +10,9 @@
     <RootNamespace>nkast.ProtonType.App</RootNamespace>
     <AssemblyName>ProtonType</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <DefineConstants>$(DefineConstants);</DefineConstants>
     <OutputPath>$(SolutionDir)bin\$(Configuration)\$(Platform)\</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\$(Platform)\</IntermediateOutputPath>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -21,13 +23,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="Accessibility">
-      <EmbedInteropTypes>False</EmbedInteropTypes>
-    </Reference>
     <Reference Include="MahApps.Metro">
       <HintPath>..\3rdPartyLibraries\MahApps.Metro\Libraries\1.6.5\net40\MahApps.Metro.dll</HintPath>
     </Reference>
-    <Reference Include="PresentationFramework.Aero" />
   </ItemGroup>
 
   <ItemGroup>
