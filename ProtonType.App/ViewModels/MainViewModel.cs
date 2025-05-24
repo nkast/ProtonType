@@ -119,7 +119,8 @@ namespace nkast.ProtonType.App.ViewModels
             
             if (moduleFile == null) return;
 
-            if (((IModuleFileProject)moduleFile).SpawnNewMainWindow)
+            IModuleFileProject moduleFileProject = moduleFile as IModuleFileProject;
+            if (moduleFileProject != null && moduleFileProject.SpawnNewMainWindow)
             {
                 // get executable path
                 String[] cmds = Environment.GetCommandLineArgs();
